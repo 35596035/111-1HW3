@@ -4,7 +4,7 @@
 ><br />
 >姓名：邱韋翔
 ><br />
->作業撰寫時間：180 (mins，包含程式撰寫時間)
+>作業撰寫時間：10 (mins，包含程式撰寫時間)
 ><br />
 >最後撰寫文件日期：2022/11/7
 >
@@ -14,7 +14,7 @@
 - [x]個人認為完成作業須具備觀念
 
 ## 說明程式與內容
-
+拉取工具箱中的下拉式選單也就是`DropDownList`
 下段程式碼則為使用後結果：
 
 ```html
@@ -37,7 +37,9 @@
 </body>
 </html>
 ```
-
+給予兩個String型別的list在運用for迴圈給DropDownList下拉式選單添加清單，
+在運用DropDownList.SelectIndex抓取選的值及PostBack的特性，讓操作者選取的值隨時更新。
+下段程式碼則為使用後結果：
 ```csharp
 public partial class Test : System.Web.UI.Page
     {
@@ -74,7 +76,6 @@ public partial class Test : System.Web.UI.Page
 
                 ddl_Food.Items.Add(o_L);
             }
-            //Response.Write(ddl_Category.SelectedIndex);
         }
     }
 }
@@ -83,6 +84,5 @@ public partial class Test : System.Web.UI.Page
 
 ## 個人認為完成作業須具備觀念
 
-開始寫說明，需要說明本次作業個人覺得需學會那些觀念 (需寫成文章，需最少50字，
-並且文內不得有你、我、他三種文字)
+須了解DropDownList的物件控制，給予對應控制物件的指令即可
 
